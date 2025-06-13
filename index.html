@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC Conseil & Formation - Reconversion Professionnelle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .gradient-border {
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb);
+            padding: 2px;
+            border-radius: 12px;
+        }
+        
+        .gradient-border-content {
+            background: white;
+            border-radius: 10px;
+        }
+        
+        .wave {
+            animation: wave 2s ease-in-out infinite;
+        }
+        
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+    </style>
+    <meta name="description" content="NC Conseil & Formation - Reconversion Professionnelle">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold gradient-text">NC Conseil</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#accueil" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil</a>
+                        <a href="#methode" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Méthode</a>
+                        <a href="#transformations" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Résultats</a>
+                        <a href="#contact" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:shadow-lg transition-all">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="floating">
+                <i class="fas fa-seedling text-6xl text-white/80 mb-8 wave"></i>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Reconversion
+                <span class="block text-yellow-300">Professionnelle</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-white/90 mb-8 font-light">
+                Ose <strong>(re)donner du sens</strong> à ta vie pro
+            </p>
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-6">
+                    Tu ressens un décalage entre ce que tu fais et ce que tu es ? Tu as envie de te réinventer, mais tu ne sais pas par où commencer ?
+                </p>
+                <p class="text-lg md:text-xl text-white/80 leading-relaxed">
+                    <strong>Tu n'es pas seul(e).</strong> Ensemble, nous pouvons transformer ces blocages en tremplins pour une vie professionnelle plus alignée et épanouissante.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="pulse-button bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all shadow-xl">
+                    <i class="fas fa-phone mr-2"></i>
+                    Appel Découverte Gratuit
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-600 transition-all">
+                    <i class="fas fa-play mr-2"></i>
+                    Découvrir la Méthode
+                </button>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+                <div class="text-center">
+                    <div class="text-3xl font-bold">3 mois</div>
+                    <div class="text-sm opacity-80">Programme minimum</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold">100%</div>
+                    <div class="text-sm opacity-80">Personnalisé</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold">30 min</div>
+                    <div class="text-sm opacity-80">Appel découverte offert</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questionnements Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">
+                    Tu n'es pas seul(e) à vivre ces questionnements
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    De nombreuses personnes traversent ces périodes de doute et de remise en question. Voici quelques situations courantes que nous accompagnons :
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="gradient-border card-hover fade-in">
+                    <div class="gradient-border-content p-8 h-full">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-heart-broken text-4xl text-red-500 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Perte de sens au travail</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Tu te lèves le matin sans motivation, en te demandant à quoi tout cela rime.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tu ressens un vide, une envie de faire autre chose, sans savoir quoi ni comment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gradient-border card-hover fade-in">
+                    <div class="gradient-border-content p-8 h-full">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-exchange-alt text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Envie de changer de métier</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Tu rêves d'une nouvelle activité, mais tu crains de repartir de zéro, de manquer de compétences.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tu te demandes si c'est le bon moment, si tu es légitime, si tu vas y arriver.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gradient-border card-hover fade-in">
+                    <div class="gradient-border-content p-8 h-full">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-eye text-4xl text-purple-500 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Peur de l'échec</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Tu as peur de te tromper, de décevoir, de ne pas être à la hauteur.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tu te sens paralysé(e) par le doute, l'incertitude, le syndrome de l'imposteur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Méthode Section -->
+    <section id="methode" class="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">
+                    Une méthode humaine et personnalisée
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Chez NC Conseil &amp; Formation, nous croyons en une approche progressive et bienveillante. Nous t'accompagnons pas à pas pour transformer tes doutes en forces.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div class="fade-in">
+                    <img src="https://fakeimg.pl/600x400/667eea/ffffff?text=Coaching+Personnalisé" alt="Coaching personnalisé" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="space-y-8 fade-in">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <i class="fas fa-user text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Coaching individuel personnalisé</h3>
+                            <p class="text-gray-600">Un accompagnement sur mesure qui s'adapte à tes besoins spécifiques, ton histoire et tes objectifs personnels.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <i class="fas fa-calendar-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Programme de 3 mois minimum</h3>
+                            <p class="text-gray-600">Deux séances par mois pour assurer un suivi régulier et des résultats durables, avec des exercices pratiques entre les sessions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <i class="fas fa-video text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Flexibilité des séances</h3>
+                            <p class="text-gray-600">Séances en visioconférence ou en présentiel selon tes préférences, pour s'adapter à ton emploi du temps et ta localisation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl text-center fade-in">
+                <i class="fas fa-gift text-5xl text-purple-600 mb-6"></i>
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Appel découverte offert</h3>
+                <p class="text-xl text-gray-600 mb-8">
+                    Un premier échange de 30 minutes pour faire connaissance, comprendre tes attentes et vérifier que notre approche te correspond.
+                </p>
+                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transition-all pulse-button">
+                    <i class="fas fa-phone mr-2"></i>
+                    Réserver mon appel gratuit
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blocages Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Qu'est-ce qui te retient vraiment d'agir ?
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Peut-être que tu sais au fond de toi que tu veux changer. Tu en as assez de douter, de te sentir bloqué(e), de tourner en rond.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="space-y-6 fade-in">
+                    <div class="bg-red-500/20 border-l-4 border-red-500 p-6 rounded-r-lg">
+                        <p class="text-lg italic">"Et si je n'y arrivais pas ?"</p>
+                    </div>
+                    <div class="bg-yellow-500/20 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                        <p class="text-lg italic">"Ce n'est pas le bon moment."</p>
+                    </div>
+                    <div class="bg-blue-500/20 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                        <p class="text-lg italic">"Je suis comme ça, on ne change pas."</p>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h3 class="text-3xl font-bold mb-6">Ces pensées cachent des peurs plus profondes :</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-center">
+                            <i class="fas fa-times-circle text-red-400 mr-3"></i>
+                            Peur d'échouer
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-eye text-yellow-400 mr-3"></i>
+                            Peur du regard des autres
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-trophy text-green-400 mr-3"></i>
+                            Peur de réussir… et de ne plus se reconnaître
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8 p-6 bg-purple-600/30 rounded-lg">
+                        <p class="text-lg">
+                            Chez NC Conseil &amp; Formation, on ne t'aide pas simplement à passer à l'action. 
+                            <strong>On t'aide à comprendre ce qui te freine, et à transformer ces peurs en moteurs de changement.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-8 md:p-12 text-center fade-in">
+                <h3 class="text-3xl font-bold mb-8">Questions qui changent tout :</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-lg">
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <i class="fas fa-question-circle text-3xl mb-4"></i>
+                        <p>Quelle peur t'empêche d'avancer aujourd'hui ?</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <i class="fas fa-clock text-3xl mb-4"></i>
+                        <p>Que perds-tu à ne pas agir maintenant ?</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <i class="fas fa-step-forward text-3xl mb-4"></i>
+                        <p>Quel serait ton tout premier petit pas ?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformations Section -->
+    <section id="transformations" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">
+                    Transformations concrètes
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Au-delà des mots, voici les transformations réelles que nos clients vivent après notre accompagnement. Ces changements s'installent progressivement et durablement.
+                </p>
+            </div>
+
+            <div class="space-y-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-in">
+                    <div>
+                        <div class="bg-gradient-to-r from-purple-100 to-pink-100 p-8 rounded-2xl">
+                            <i class="fas fa-lightbulb text-4xl text-purple-600 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Clarté sur ton projet professionnel</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">AVANT</span>
+                                    <p class="text-gray-600">Tu te sentais perdu(e), sans direction claire.</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">APRÈS</span>
+                                    <p class="text-gray-600">Tu identifies ce qui te motive vraiment et tu construis un projet aligné avec tes valeurs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://fakeimg.pl/600x400/667eea/ffffff?text=Clarté+Projet" alt="Clarté projet" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-in">
+                    <div class="order-2 lg:order-1">
+                        <img src="https://fakeimg.pl/600x400/764ba2/ffffff?text=Confiance+Soi" alt="Confiance en soi" class="rounded-2xl shadow-xl">
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <div class="bg-gradient-to-r from-blue-100 to-purple-100 p-8 rounded-2xl">
+                            <i class="fas fa-shield-alt text-4xl text-blue-600 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Confiance en tes capacités</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">AVANT</span>
+                                    <p class="text-gray-600">Tu doutais de ta légitimité et de tes compétences.</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">APRÈS</span>
+                                    <p class="text-gray-600">Tu reconnais tes forces, tu valorises ton parcours et tu oses te lancer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-in">
+                    <div>
+                        <div class="bg-gradient-to-r from-green-100 to-blue-100 p-8 rounded-2xl">
+                            <i class="fas fa-rocket text-4xl text-green-600 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Passage à l'action</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">AVANT</span>
+                                    <p class="text-gray-600">Tu procrastinais, paralysé(e) par la peur.</p>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">APRÈS</span>
+                                    <p class="text-gray-600">Tu poses des actions concrètes, étape par étape, vers ta nouvelle vie professionnelle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://fakeimg.pl/600x400/f093fb/ffffff?text=Action+Concrète" alt="Passage à l'action" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="py-20 hero-gradient relative">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ils/elles l'ont fait. Pourquoi pas toi ?
+                </h2>
+                <p class="text-xl md:text-2xl text-white/90 mb-8">
+                    Ton avenir professionnel mérite que tu l'écoutes.
+                </p>
+                <p class="text-2xl md:text-3xl text-yellow-300 font-bold mb-12">
+                    Et si tu t'autorisais à t'aligner avec toi-même ?
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <button class="pulse-button bg-white text-purple-600 px-10 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transition-all shadow-2xl">
+                        <i class="fas fa-phone mr-3"></i>
+                        Commencer ma transformation
+                    </button>
+                    <button class="border-2 border-white text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-white hover:text-purple-600 transition-all">
+                        <i class="fas fa-envelope mr-3"></i>
+                        Poser mes questions
+                    </button>
+                </div>
+                
+                <div class="mt-12 text-white/80">
+                    <p class="text-lg mb-4">
+                        <i class="fas fa-clock mr-2"></i>
+                        Appel découverte de 30 minutes - 100% gratuit
+                    </p>
+                    <p class="text-sm">
+                        Sans engagement • Échange bienveillant • Conseils personnalisés
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-6">NC Conseil &amp; Formation</h3>
+                    <p class="text-gray-300 mb-6">
+                        Accompagnement personnalisé pour votre reconversion professionnelle. 
+                        Transformez vos doutes en forces et donnez du sens à votre carrière.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Contact</h4>
+                    <div class="space-y-4 text-gray-300">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-purple-400"></i>
+                            <span>+33 1 23 45 67 89</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-purple-400"></i>
+                            <span>contact@nc-conseil.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-purple-400"></i>
+                            <span>Paris, France</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Nos Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Coaching individuel</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bilan de compétences</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Accompagnement reconversion</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Formation professionnelle</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 NC Conseil &amp; Formation. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white');
+                navbar.classList.remove('bg-white/90');
+            } else {
+                navbar.classList.add('bg-white/90');
+                navbar.classList.remove('bg-white');
+            }
+        });
+    </script>
+</body>
+</html>
